@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu" id="menu">
+        <button onclick="startGame(1)">1 Player</button>
+        <button onclick="startGame(2)">2 Players</button>
+        <button onclick="showColorPicker()">Color</button>
+    </div>
+    <div class="color-picker" id="color-picker" style="display: none;">
+        <input type="color" id="color-input" value="#0095DD">
+        <button onclick="applyColor()">Apply Color</button>
+        <button onclick="backToMenu()">Back</button>
+    </div>
+    <div class="game-container" id="game-container" style="display: none;">
+        <div class="score-board" id="score-board"></div>
+        <canvas id="pongCanvas"></canvas>
+        <button class="menu-button" onclick="showMenu()">Menu</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
